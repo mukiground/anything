@@ -175,6 +175,10 @@ li {
     height: auto; */
 }
 
+.image-container :hover{
+    cursor: pointer;
+}
+
 #image-to-switch-a {
     max-width: 30%; /* ここで最大幅を70%に設定します */
     height: auto;

@@ -23,12 +23,12 @@
             <div class="container">
                 <div class="shop-icon">
                     <p style="text-align: center;">通販取扱中のタイトル一覧です。クリックすると詳細ページに飛びます（↑New ↓Old）</p>
-
+                    <br>
                     <a href="zensen.html" class="shop-link" style="text-decoration: underline; color:blue;">
                         <p style="text-align: center;">前線よりか速い</p>
                     </a>
                     <div class="image-container">
-                        <img id="image-to-switch-a" src="sample/zensen/hyoshi_rev.png" alt="Image">
+                        <img id="image-zensen" src="sample/zensen/hyoshi_rev.png" alt="Image" width="500" height="720">
                     </div>
                     <br>
                     <br>
@@ -36,7 +36,7 @@
                         <p style="text-align: center;">スペシャルミラクルスーパーハイパーごっつウルトラめっちゃ最高ほんまにハッピーな本</p>
                     </a>
                     <div class="image-container">
-                        <img id="image-to-switch-a" src="sample/happy/hyoshi.png" alt="Image">
+                        <img id="image-happy" src="sample/happy/hyoshi.png" alt="Image"  width="500" height="720">
                     </div>
                     <br>
                     <br>
@@ -44,7 +44,7 @@
                         <p style="text-align: center;">×1×0</p>
                     </a>
                     <div class="image-container">
-                        <img id="image-to-switch-b" src="sample/batsu1batsu0/hyoushi.png" alt="Image">
+                        <img id="image-batsu1batsu0" src="sample/batsu1batsu0/hyoushi.png" alt="Image" width="720" height="500">
                     </div>
                     <br>
                     <br>
@@ -52,21 +52,8 @@
                         <p style="text-align: center;">×0×1</p>
                     </a>
                     <div class="image-container">
-                        <img id="image-to-switch-b" src="sample/batsu0batsu1/hyoushi.png" alt="Image">
+                        <img id="image-batsu0batsu1" src="sample/batsu0batsu1/hyoushi.png" alt="Image" width="720" height="500">
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                     <br>
                     <br>
                 </div>
@@ -76,5 +63,26 @@
             <img id="fullscreen-image" src="">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("image-zensen").addEventListener("click", function() {
+            window.location.href = "zensen.html";
+        });
+    
+        document.getElementById("image-happy").addEventListener("click", function() {
+            window.location.href = "happy.html";
+        });
+    
+        document.getElementById("image-batsu1batsu0").addEventListener("click", function() {
+            window.location.href = "batsu1batsu0.html";
+        });
+    
+        document.getElementById("image-batsu0batsu1").addEventListener("click", function() {
+            window.location.href = "batsu0batsu1.html";
+        });
+    });
+</script>
+
 </html>
