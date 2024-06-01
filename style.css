@@ -171,12 +171,17 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%;
+    height: auto; */
+}
+
+#image-to-switch-a {
+    max-width: 30%; /* ここで最大幅を70%に設定します */
     height: auto;
 }
 
-#image-to-switch {
-    max-width: 100%;
+#image-to-switch-b {
+    max-width: 40%; /* ここで最大幅を70%に設定します */
     height: auto;
 }
 
@@ -225,4 +230,40 @@ li {
 
     .shop-main {
         width: 80vw;
-        background-image: url('img/MAILORDER_2
+        background-image: url('img/MAILORDER_2.png');
+    }
+
+    .ex-main {
+        width: 80vw;
+        background-image: url('img/EXHIBITION_2.png');
+    }
+
+    .main-body {
+        width: auto;
+        max-width: 500px;
+        margin-right: 15px;
+    }
+
+    .main-icon {
+        width: 30vw;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .shop-icon {
+        width: 70vw;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .ex-icon {
+        width: 70vw;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+}
