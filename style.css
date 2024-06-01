@@ -1,0 +1,252 @@
+p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 15vw;
+    height: 100%;
+    background: #F0F0FF;
+    border-right: 4px solid rgb(207, 206, 206);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    transition: color 0.3s;
+}
+  
+a:hover {
+color : #ff7043;
+}
+
+li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.sidebar ul {
+    list-style: disc outside;
+    padding: 25px;
+}
+
+.item1 {
+    color: red;
+}
+.item1 a {
+    color: black;
+}
+
+.item2 {
+    color: blue;
+}
+.item2 a {
+    color: black;
+}
+
+.item3 {
+    color: green;
+}
+.item3 a {
+    color: black;
+}
+
+.item4 {
+    color: purple;
+}
+.item4 a {
+    color: black;
+}
+
+.item5 {
+    color: rgb(255, 0, 225);
+}
+.item5 a {
+    color: black;
+}
+
+.main {
+    width: 85vw;
+    height: 100vh;
+    overflow: auto;
+    background-image: url('img/MUKIBUTSU6.png');
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+}
+
+.shop-main {
+    width: 85vw;
+    height: 100vh;
+    overflow: auto;
+    background-image: url('img/MAILORDER.png');
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+}
+
+.ex-main {
+    width: 85vw;
+    height: 100vh;
+    overflow: auto;
+    background-image: url('img/EXHIBITION.png');
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+}
+
+.main-body {
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 20px;
+    font-weight: bold;
+    flex: initial;
+    word-wrap: break-word;
+}
+
+.todaysinfo {
+    text-align: center;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.page-title span {
+    color: #B0C4DE;
+}
+
+.main-container {
+    justify-content: center;
+}
+
+.main-icon {
+    text-align: start;
+    margin-right: 20px;
+    justify-content: center;
+    flex: initial;
+}
+
+.shop-icon {
+    text-align: start;
+    margin-right: 20px;
+    justify-content: center;
+    flex: initial;
+}
+
+.ex-icon {
+    text-align: start;
+    margin-right: 20px;
+    justify-content: center;
+    flex: initial;
+}
+
+.inquiry {
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+}
+
+.shop-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+/* サンプル表示用 */
+.fullscreen-img {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-img img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+#image-to-switch, #fullscreen-image {
+    cursor: pointer;
+}
+
+
+/* メディアクエリ */
+@media (max-width: 700px) {
+    body {
+        font-size: ９px;
+    }
+
+    .sidebar {
+        width: 20vw;
+    }
+
+    .sidebar a {
+        font-size: 12px;
+    }
+
+    .main {
+        width: 80vw;
+        background-image: url('img/MUKIBUTSU6_2.png');
+    }
+
+    .shop-main {
+        width: 80vw;
+        background-image: url('img/MAILORDER_2.png');
+    }
+
+    .ex-main {
+        width: 80vw;
+        background-image: url('img/EXHIBITION_2.png');
+    }
+
+    .main-body {
+        width: auto;
+        max-width: 500px;
+        margin-right: 15px;
+    }
+
+    .main-icon {
+        width: 30vw;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .shop-icon {
+        width: 70vw;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .ex-icon {
+        width: 70vw;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+}
