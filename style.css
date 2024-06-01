@@ -21,7 +21,7 @@ a {
 }
   
 a:hover {
-color : #ff7043;
+    color : #ff7043;
 }
 
 li {
@@ -164,7 +164,20 @@ li {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    
+}
+
+/* 画像センタリング用 */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#image-to-switch {
+    max-width: 100%;
+    height: auto;
 }
 
 /* サンプル表示用 */
@@ -191,7 +204,6 @@ li {
     cursor: pointer;
 }
 
-
 /* メディアクエリ */
 @media (max-width: 700px) {
     body {
@@ -213,40 +225,4 @@ li {
 
     .shop-main {
         width: 80vw;
-        background-image: url('img/MAILORDER_2.png');
-    }
-
-    .ex-main {
-        width: 80vw;
-        background-image: url('img/EXHIBITION_2.png');
-    }
-
-    .main-body {
-        width: auto;
-        max-width: 500px;
-        margin-right: 15px;
-    }
-
-    .main-icon {
-        width: 30vw;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
-    .shop-icon {
-        width: 70vw;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
-    .ex-icon {
-        width: 70vw;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
-    img {
-        width: 90%;
-        height: auto;
-    }
-}
+        background-image: url('img/MAILORDER_2
