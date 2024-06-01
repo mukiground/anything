@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>無機物のエワ用ホームページ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" id="favicon">
+    <meta name="robots" content="noindex,noarchive,nofollow,noimageindex">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li class="item1"><a href="index.html">トップ</a></li>
+                <li class="item2"><a href="online-shop.html">通販</a></li>
+                <li class="item3"><a href="exhibition.html">展示</a></li>
+                <li class="item4"><a href="https://twitter.com/muki_sn" target="_blank">Twitter</a></li>
+                <li class="item5"><a href="https://www.pixiv.net/users/13689758" target="_blank">pixiv</a></li>
+            </ul>
+        </div>
+        <div class="shop-main">
+            <div class="container">
+                <div class="shop-icon">
+                    <a href="https://www.melonbooks.co.jp/fromagee/fromagee/detail/detail.php?product_id=1937072" target="_blank" class="shop-link"  style="text-decoration: underline; color:blue;">
+                        <p style="text-align: center;">歩くタイプのパラドクス<!-- パラドックスがたりない --></p>
+                    </a>
+                    <img id="image-to-switch" src="sample/sample.jpg" alt="Image" width="500" height="720">
+                    <p style="text-align: center;">クリックorタップで試し読みできます☝レイアウト確認にどうぞ</p>
+                    <br>
+                    <p style="text-align: center;"><a href="https://www.melonbooks.co.jp/fromagee/fromagee/detail/detail.php?product_id=1937072" target="_blank">注文ページへ（フロマージュ）</a></p>
+                    <p style="text-align: center;">pixiv本文サンプルは<a href="https://www.pixiv.net/novel/show.php?id=19784444" target="_blank">こちら</a> ※エワ期間サンプル増量中！</p>
+                    <br>
+                    <p style="text-align: center;">2023年5月4日『超吾が手に引き金を2023』発行 </p>
+                    <p style="text-align: center;">A5二段組小説　182P　全年齢</p>
+                    <p style="text-align: center;">書店委託価格：1,650円（送料別）</p>
+                    <p style="text-align: center;">表紙装画：宇佐見うさおさん（<a href="https://twitter.com/usmuso_e" target="_blank">@usmuso_e</a>） </p>
+                    <br>
+                    <br>
+                    <div style="text-align: center; font-weight: bold; font-size: large;">"水隠岐、72時間で未来変えるってよ"</div>
+                    <p style="text-align: center;">17歳の隠岐と未来からやってきた27歳の隠岐に振り回される水上の話 </p>
+                    <p style="text-align: center;">未来人もといアラサー隠岐には、なにやら秘密があるらしく…？ </p>
+                    <div style="text-align: center;">※捏造・年齢操作・作中並行世界のエピソードに死ネタを含みます※</div>
+                    <p style="text-align: center;">最終的にミラクルハッピーエンドのなんちゃってSF本です！！！ </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="fullscreen" class="fullscreen-img" onclick="closeImage()">
+            <img id="fullscreen-image" src="">
+        </div>
+    </div>
+    <script>
+        let imageIndex = 0;
+        const images = ["sample/sample.jpg", "sample/01.png", "sample/02.png", "sample/03.png", "sample/04.png", "sample/05.png", "sample/06.png"];
+    
+        const imageElement = document.getElementById("image-to-switch");
+        const fullscreenElement = document.getElementById("fullscreen-image");
+    
+        imageElement.addEventListener("click", function(event) {
+            event.stopPropagation();
+            switchImage();
+        });
+    
+        fullscreenElement.addEventListener("click", function(event) {
+            event.stopPropagation();
+            switchImage();
+        });
+    
+        function switchImage() {
+            imageIndex++;
+            if (imageIndex === images.length) {
+                imageIndex = 0;
+            }
+            imageElement.src = images[imageIndex];
+            fullscreenElement.src = images[imageIndex];
+            document.getElementById("fullscreen").style.display = "flex";
+        }
+    
+        function closeImage() {
+            document.getElementById("fullscreen").style.display = "none";
+            imageIndex = 0;
+            imageElement.src = images[imageIndex];
+        }
+    </script>
+</body>
+</html>
