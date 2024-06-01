@@ -187,6 +187,7 @@ li {
 
 /* サンプル表示用 */
 .fullscreen-img {
+    /* padding-left: 8%; */
     display: none;
     position: fixed;
     top: 0;
