@@ -76,13 +76,13 @@
         });
     
         function switchImage() {
-            imageIndex++;
             if (imageIndex === images.length) {
                 imageIndex = 0;
             }
             imageElement.src = images[imageIndex];
             fullscreenElement.src = images[imageIndex];
             document.getElementById("fullscreen").style.display = "flex";
+            imageIndex++;
         }
     
         function closeImage() {
