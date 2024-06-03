@@ -1,3 +1,7 @@
+html, body {
+    overflow: hidden;
+}
+
 p {
     margin-top: 4px;
     margin-bottom: 4px;
@@ -71,7 +75,7 @@ li {
 
 .main {
     width: 85vw;
-    height: 90vh;
+    height: 100vh;
     overflow: auto;
     background-image: url('img/MUKIBUTSU6.png');
     display: flex;
@@ -180,12 +184,12 @@ li {
 }
 
 #image-to-switch-a {
-    max-width: 30%; /* ここで最大幅を70%に設定します */
+    max-width: 30%;
     height: auto;
 }
 
 #image-to-switch-b {
-    max-width: 40%; /* ここで最大幅を70%に設定します */
+    max-width: 40%;
     height: auto;
 }
 
@@ -228,10 +232,10 @@ li {
         font-size: 12px;
     }
 
-    .main {
+    /* .main {
         width: 80vw;
         background-image: url('img/MUKIBUTSU6_2.png');
-    }
+    } */
 
     .shop-main {
         width: 80vw;
