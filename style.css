@@ -71,7 +71,7 @@ li {
 
 .main {
     width: 85vw;
-    height: 100vh;
+    height: 90vh;
     overflow: auto;
     background-image: url('img/MUKIBUTSU6.png');
     display: flex;
