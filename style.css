@@ -219,7 +219,7 @@ li {
 }
 
 /* メディアクエリ */
-/* @media (max-width: 700px) {
+ @media (max-width: 700px) {
     body {
         font-size: ９px;
     }
@@ -275,4 +275,4 @@ li {
         width: 90%;
         height: auto;
     }
-} */
+} 
