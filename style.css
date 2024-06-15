@@ -221,7 +221,7 @@ li {
 /* メディアクエリ */
  @media (max-width: 700px) {
     body {
-        font-size: ９px;
+        font-size: 9px;
     }
 
     .sidebar {
