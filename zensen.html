@@ -59,7 +59,8 @@
     </div>
     <script>
         let imageIndex = 0;
-        const images = ["sample/zensen/01.png",  "sample/zensen/02.png", "sample/zensen/03.png", "sample/zensen/04.png", "sample/zensen/05.png", "sample/zensen/06.png", "sample/zensen/07.png"];
+        const images = ["sample/zensen/01.png", "sample/zensen/02.png", "sample/zensen/03.png", "sample/zensen/04.png", "sample/zensen/05.png", "sample/zensen/06.png", "sample/zensen/07.png"];
+        const coverImage = "sample/zensen/hyoshi_rev.png"; // 表紙画像のパス
     
         const imageElement = document.getElementById("image-to-switch");
         const fullscreenElement = document.getElementById("fullscreen-image");
@@ -87,8 +88,8 @@
         function closeImage() {
             document.getElementById("fullscreen").style.display = "none";
             imageIndex = 0;
-            imageElement.src = images[imageIndex];
+            imageElement.src = coverImage;  // 表紙画像に戻す
         }
-    </script>
+    </script>    
 </body>
 </html>

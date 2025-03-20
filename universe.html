@@ -59,7 +59,16 @@
     </div>
     <script>
         let imageIndex = 0;
-        const images = ["sample/universe/sample_hyo1.png", "sample/universe/サンプル_01.png",  "sample/universe/サンプル_02.png", "sample/universe/サンプル_03.png", "sample/universe/サンプル_04.png", "sample/universe/サンプル_05.png", "sample/universe/サンプル_06.png"];
+        const images = [
+            "sample/universe/sample_hyo1.png",
+            "sample/universe/サンプル_01.png",
+            "sample/universe/サンプル_02.png",
+            "sample/universe/サンプル_03.png",
+            "sample/universe/サンプル_04.png",
+            "sample/universe/サンプル_05.png",
+            "sample/universe/サンプル_06.png"
+        ];
+        const coverImage = "sample/universe/sample_hyo1.png"; // 表紙画像のパス
     
         const imageElement = document.getElementById("image-to-switch");
         const fullscreenElement = document.getElementById("fullscreen-image");
@@ -87,8 +96,8 @@
         function closeImage() {
             document.getElementById("fullscreen").style.display = "none";
             imageIndex = 0;
-            imageElement.src = images[imageIndex];
+            imageElement.src = coverImage; // 表紙画像に戻す
         }
-    </script>
+    </script>    
 </body>
 </html>
